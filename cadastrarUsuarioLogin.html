@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cadastro de Usuário</title>
+<link href="_css/estilo.css" rel="stylesheet" type="text/css" />
+<link href="_css/form.css" rel="stylesheet" type="text/css" />
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="_javascript/funcoes.js"></script>
+
+
+</head>
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Projeto Nota10</h1>
+				<h2>Módulo de cadastro de usuário</h2>
+			</hgroup>
+
+			<img id="logo" src="_imagens/arquivoLogo.png" />
+
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul>
+					<li onmouseover="mudafoto('_imagens/homeLogo.png')"
+						onmouseout="mudafoto('_imagens/homeLogo.png')"><a
+						href="home.php">Home</a></li>
+
+					<li onmouseover="mudafoto('_imagens/pesquisarLogo.png')"
+						onmouseout="mudafoto('_imagens/homeLogo.png')"><a
+						href="consultaUsuario.php">Consulta Usuário</a></li>
+				
+
+
+				</ul>
+			</nav>
+		</header>
+		<section id="corpo-full">
+			<header id="cabecalho-corpo">
+				<hgroup>
+					<p id="caminho">Home > Cadastro Usuário</p>
+					<h1>Formulário de Cadastro de Usuário</h1>
+					<h2>por Fabricio Duarte e Manoel Andrade</h2>
+				</hgroup>
+			</header>
+
+			<article id="texto-principal">
+
+				
+				
+				<form method="post" name="formCadastro" action="cadastrarUsuarioLogin.php">
+
+					<fieldset id="usuario">
+						<legend>Dados do Usuário</legend>
+				
+					
+						<table>
+											
+								
+							<td colspan="4"><hr /></td>
+							<tr>
+								<p>
+									<label for="nome"><td colspan="2">Nome:</td> </label>
+								<td colspan="2"><input type="text" name="nome"
+									id="nome" maxlength="20" size="35" required="required"
+									autofocus="autofocus" placeholder="Digite seu nome" /></td>
+								</p>
+							</tr>
+
+							<tr>
+								<p>
+									<label for="login"><td colspan="2">Login:</td> </label>
+								<td colspan="2"><input type="text" name="login"
+									id="login" maxlength="15" size="15" required="required"
+									placeholder="Digite seu Login"></td>
+								</p>
+							</tr>
+							<tr>
+								<p>
+									<label for="senha"><td colspan="2">Senha:</td></label>
+								<td colspan="2"><input type="password" name="senha"
+									id="senha" maxlength="15" size="15" 
+									placeholder="Digite sua senha" required="required" /></td>
+								</p>
+							</tr>
+							<tr>
+								<p>
+									<label for="email"><td colspan="2">Email:</td></label>
+								<td colspan="2"><input type="email" name="email"
+									id="email" maxlength="40" size="30" 
+									placeholder="Ex: email@com.br" required="required" /></td>
+								</p>
+							</tr>
+											
+				
+						<p><tr colspan="6"><td>
+						<input type="submit" name="salvar" id="btnSalvar" value="Salvar" />
+						</td></tr></p>
+					
+			
+				</table>
+			</form>	
+	
+
+
+			</article>
+		</section>
+</fieldset>	
+
+
+
+		<footer id="rodape">
+			<p>
+				Copyright &copy; 2015 - by Fabricio Duarte - Manoel Andrade<a
+					href="http://facebook.com/biosonora" target="_blank">| Facebook</a>
+				| <a href="http://twitter.com/biosonora" target="_blank">Twitter</a>
+				| <a href="https://www.linkedin.com/pub/fabrÃ­cio-duarte/2a/306/522"
+					target="_blank"> Linkedin </a>
+			</p>
+
+		</footer>
+	</div>
+</body>
+</html>

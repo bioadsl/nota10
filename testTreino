@@ -1,0 +1,25 @@
+  function treino ( )
+{
+    /*definição de propriedades*/
+    $numbero_clicks = 0;
+	$vezes = 3;
+	$acertos = 0;
+	$erros = 0;
+	$resposta = 0;
+    $valorA = rand(6,1);
+    $valorB = rand(6,1);
+
+
+    function total(){
+    return $valorA + $valorB;
+    }, this);
+
+    }
+
+
+
+
+
+
+
+}
